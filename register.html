@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<title>REGISTER</title>
+		<script language="javascript">
+		function formvalidation()
+			{
+				var uname= document.f1.uname.value;
+				var password= document.f1.password.value;
+				var uname_len = uname.length;
+				var pass_len = password.length;
+				var letters = /^[A-Za-z]+$/;
+				var flag=true;
+				if(uname=="")
+				{
+				document.getElementById("nameerror").innerHTML="<span style='color: red;'><b>Provide an username</b>";
+				flag=false;
+				}
+				else if (uname_len <= 3 || uname_len > 12)
+				{
+				document.getElementById("nameerror").innerHTML="<span style='color: red;'><b>length min=3 max=11</b>";
+				flag=false;
+				}
+				else if(uname.match(letters))
+				{
+				document.getElementById("nameerror").innerHTML="";
+				}
+				else
+				{
+				document.getElementById("nameerror").innerHTML="<span style='color: red;'><b>enter alphabets only</b>";
+				flag=false;
+				}
+				if(password=="")
+				{
+				document.getElementById("passworderror").innerHTML="<span style='color: red;'><b>Provide a password</b>";
+				flag=false;
+				}
+				else if (pass_len <= 7 || pass_len > 12)
+				{
+				document.getElementById("passworderror").innerHTML="<span style='color: red;'><b>length min=7 max=11</b>";
+				flag=false;
+				}
+				else
+				{
+				document.f1.password.value=password;	
+				document.getElementById("passworderror").innerHTML="";
+				}	
+			return flag;
+			}	
+		</script>
+		<style>
+		.container
+			{
+				background-image: url("register.jpg");
+				background-position: center;
+				height:100%;
+				margin-top:0px;
+				max-width: 100%;
+				max-height: 100%;
+			}
+			form
+			{
+    		width:500px;
+    		height:400px;
+    		background:rgba(0,0,0,0.7);
+			}
+			input[type=text]
+			{
+			    width: 100%;
+			    background-color: #ff6633;
+			    background-position: 10px 10px;
+			    background-repeat: no-repeat;
+			    padding: 10px 10px 12px 20px;
+			    margin: 5px 0;
+			    border: 5px solid #ccc;
+			    transition: 0.5s;
+			    outline: none;
+			}
+		
+			input[type=password]
+			{
+
+			    width:100%;
+			    background-color: #ff6633;
+			    background-position: 5px 5px;
+			    background-repeat: no-repeat;
+			    padding: 10px 10px 12px 20px;
+			    margin: 5px 0;
+			    border: 5px solid #ccc;
+			    transition: 0.5s;
+			    outline: none;
+			}
+			input[type=text]:focus,input[type=password]:focus {
+			    border: 3px solid black;
+			}
+			 input[type=submit], input[type=reset] {
+			    background-color: #ff6633;
+			    padding: 12px 30px;
+			    margin:10px 0px;
+			    cursor:pointer;
+			}
+			input[type=submit],input[type=reset] 
+			{
+			    border-radius: 8px;
+			    border:3px solid black;
+			}
+			input[type=submit]:hover,input[type=reset]:hover 
+			{
+			    background-color: black;
+			    color:white;
+			}
+			a
+			{
+			text-decoration: none;
+			text-decoration-style: bold; 
+			}
+		</style>
+	</head>
+	<body>
+	<div class="container"></br></br></br></br></br></br>
+	<center><form name="f1" method="post" action="welcome.html"onsubmit="return formvalidation()"></br>
+	<h1><font color="#99ff33" face="Bahnschrift">Register Yourself!!!</font></h1>
+	<table>
+	<tr>
+	<td><font color="99ff33" face="Constantia"><b>Username<font color="red">*</font>:</b></font></td>
+	<td><input type="text" name="uname" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><label id="nameerror"></label></td>
+	</tr>
+	<tr>
+	<td><font color="99ff33" face="Constantia"><b>Password<font color="red">*</font>:</b></font></td>
+	<td><input type="password" name="password" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td><label id="passworderror"></label></td>
+	</tr>
+	<tr>
+	<td><input type="submit" value="Signup"/>
+	<input type="reset" value="Clear"/></td></tr>
+	<td><h3><a href="home.php"><font color="#99ff33">Already User? Signin</a></h3></td>
+	</table></form></center>
+	</div>
+	</body>
+
+</html>
