@@ -1,0 +1,358 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.17134}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 <html>\par
+\tab <head>\par
+\tab\tab <title>Coming Soon</title>\par
+\tab\tab <link rel="stylesheet" href="style.css">\par
+\tab </head>\par
+\tab <body>\par
+\tab\tab <div class="container">\par
+\tab\tab\tab <h1>ICC CRICKET WORLD CUP 2019</h1>\par
+\tab\tab\tab <h2>Coming Soon...</h2>\par
+\par
+\tab\tab\tab <div class="count">\par
+\tab\tab\tab\tab\tab <div class="countd">\par
+\tab\tab\tab\tab\tab\tab <span id="days">00</span>\par
+\tab\tab\tab\tab\tab\tab DAYS\par
+\tab\tab\tab\tab\tab </div>\par
+\par
+\tab\tab\tab\tab\tab <div class="countd">\par
+\tab\tab\tab\tab\tab\tab <span id="hours">00</span>\par
+\tab\tab\tab\tab\tab\tab HOURS\par
+\tab\tab\tab\tab\tab </div>\par
+\par
+\tab\tab\tab\tab\tab <div class="countd">\par
+\tab\tab\tab\tab\tab\tab <span id="minutes">00</span>\par
+\tab\tab\tab\tab\tab\tab MINUTES\par
+\tab\tab\tab\tab\tab </div>\par
+\par
+\tab\tab\tab\tab\tab <div class="countd">\par
+\tab\tab\tab\tab\tab\tab <span id="seconds">00</span>\par
+\tab\tab\tab\tab\tab\tab SECONDS\par
+\tab\tab\tab\tab\tab </div>\par
+\tab\tab\tab </div>\tab\par
+\tab\tab </div>\tab\par
+\par
+\par
+\tab\tab <script type="text/javascript">\par
+\tab\tab\tab var count=new Date("may 30,2019 00:00:00").getTime();\par
+\tab\tab\tab var x= setInterval(function()\{\par
+\tab\tab\tab\tab var now= new Date().getTime();\par
+\tab\tab\tab\tab var d = count-now;\par
+\par
+\tab\tab\tab\tab var days = Math.floor(d/(1000*60*60*24));\par
+\tab\tab\tab\tab var hours= Math.floor((d%(1000*60*60*24))/(1000*60*60));\par
+\tab\tab\tab\tab var minutes= Math.floor((d%(1000*60*60))/(1000*60));\par
+\tab\tab\tab\tab var seconds= Math.floor((d%(1000*60))/1000);\par
+\par
+\tab\tab\tab\tab document.getElementById("days").innerHTML = days;\par
+\tab\tab\tab\tab document.getElementById("hours").innerHTML = hours;\par
+\tab\tab\tab\tab document.getElementById("minutes").innerHTML = minutes;\par
+\tab\tab\tab\tab document.getElementById("seconds").innerHTML = seconds;\par
+\par
+\tab\tab\tab\tab if(d<= 0)\{\par
+\tab\tab\tab\tab\tab clearInterval(x);\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\},1000);\par
+\tab\tab </script>\par
+\tab </body>\tab\par
+</html>\par
+\par
+\par
+*html page\par
+\par
+\par
+\par
+body,html\{\par
+\tab margin:0;\par
+\tab padding:0;\par
+\tab width:100%;\par
+\tab height:100%;\par
+\}\par
+\par
+body\{\par
+\tab background: url(wc.jpg) 50% 50% ;\par
+\tab background-size: cover;\par
+\tab font-family: "Montserrat", sans-serif;\par
+\}\par
+\par
+.container\{\par
+\tab width:100%;\par
+\tab position:absolute;\par
+\tab top:50%;\par
+\tab left:50%;\par
+\tab transform:translate(-50%, -50%);\par
+\tab text-align:center;\par
+\tab color:#DAA520;\par
+\}\par
+\par
+.container h1\{\par
+\tab text-transform: uppercase;\par
+\tab font-size: 60px;\par
+\tab margin:20px;\par
+\tab letter-spacing: 10px;\par
+\}\par
+\par
+.container h2\{\par
+\tab margin: 0;\par
+\tab font-size: 20px;\par
+\tab font-weight: 500;\par
+\tab font-style: italic;\par
+\}\par
+\par
+\par
+.count\{\par
+\tab margin: 40px 0;\par
+\par
+\}\par
+\par
+.countd\{\par
+\tab display: inline-block;\par
+\tab width: 80px;\par
+\tab height: 80px;\par
+\tab border: 2px solid;\par
+\tab margin: 0 30px;\par
+\tab font-size: 12px;\par
+\tab border-radius: 50%;\par
+\tab overflow: hidden;\par
+\}\par
+\par
+\par
+.countd span\{\par
+\tab display: block;\par
+\tab font-size: 26px;\par
+\tab margin-top: 14px;\par
+\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+<html>\par
+\tab <head>\par
+\tab\tab <script>\par
+\tab\tab\tab\tab function insert(num)\{\par
+\tab\tab\tab\tab\tab document.form.textview.value=document.form.textview.value+num;\par
+\tab\tab\tab\tab\}\par
+\par
+\tab\tab\tab\tab function equal()\{\par
+\tab\tab\tab\tab\tab var exp=document.form.textview.value;\par
+\tab\tab\tab\tab\tab if(exp)\{\par
+\tab\tab\tab\tab\tab\tab document.form.textview.value=eval(exp);\par
+\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\}\par
+\par
+\tab\tab\tab\tab function clean()\{\par
+\tab\tab\tab\tab\tab document.form.textview.value="";\par
+\tab\tab\tab\tab\}\par
+\par
+\tab\tab\tab\tab function back()\{\par
+\tab\tab\tab\tab\tab var exp = document.form.textview.value;\par
+\tab\tab\tab\tab\tab document.form.textview.value= exp.substring(0,exp,length-1);\par
+\tab\tab\tab\tab\}\par
+\tab\tab </script>\par
+\tab\tab <style>\par
+\tab\tab\tab\tab *\{\par
+\tab\tab\tab\tab\tab margin:0;\par
+\tab\tab\tab\tab\tab padding:0;\par
+\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab .button\{\par
+\tab\tab\tab\tab\tab width:50;\par
+\tab\tab\tab\tab\tab height:50;\par
+\tab\tab\tab\tab\tab font-size:25;\par
+\tab\tab\tab\tab\tab margin:2;\par
+\tab\tab\tab\tab\tab cursor:pointer;\par
+\tab\tab\tab\tab\tab background:\tab #F0FFFF;\par
+\tab\tab\tab\tab\tab border:double;\par
+\tab\tab\tab\tab\tab color:#000000;\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab .textview\{\par
+\tab\tab\tab\tab\tab width:217;\par
+\tab\tab\tab\tab\tab margin:5;\par
+\tab\tab\tab\tab\tab font-size:25;\par
+\tab\tab\tab\tab\tab padding:5; \par
+\tab\tab\tab\tab\tab border:double;\par
+\tab\tab\tab\tab\tab color:black;\par
+\tab\tab\tab\tab\}\par
+\par
+\tab\tab\tab\tab .main\{\par
+\tab\tab\tab\tab\tab position: absolute;\par
+\tab\tab\tab\tab\tab top:50%;\par
+\tab\tab\tab\tab\tab left:50%;\par
+\tab\tab\tab\tab\tab transform:translateX(-50%) translateY(-50%);\par
+\tab\tab\tab\tab\}\par
+\par
+\tab\tab\tab\tab .bg\{\par
+\tab\tab\tab\tab\tab background:\tab #A9A9A9;\par
+\tab\tab\tab\tab\tab height:100%;\par
+\tab\tab\tab\tab\}\par
+\tab\tab </Style>\par
+\tab </head>\par
+\tab <body>\par
+\tab\tab <div class="bg"></div>\par
+\tab\tab <div class="main">\par
+\tab\tab\tab <form name="form">\par
+\tab\tab\tab\tab <input class="textview" name="textview">\par
+\tab\tab\tab </form>\par
+\tab\tab\tab <table>\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="C" onclick="clean()"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="<" onclick="back()"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="/" onclick="insert('/')"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="*" onclick="insert('*')"></td>\par
+\par
+\tab\tab\tab\tab </tr>\tab\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="7" onclick="insert(7)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="8" onclick="insert(8)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="9" onclick="insert(9)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="-" onclick="insert('-')"></td>\par
+\par
+\tab\tab\tab\tab </tr>\tab\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="4" onclick="insert(4)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="5" onclick="insert(5)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="6" onclick="insert(6)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="+" onclick="insert('+')"></td>\par
+\par
+\tab\tab\tab\tab </tr>\tab\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="1" onclick="insert(1)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="2" onclick="insert(2)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="3" onclick="insert(3)"></td>\par
+\tab\tab\tab\tab\tab <td rowspan=5><input class="button" style="height:106" value="=" onclick="equal()"></td>\par
+\par
+\tab\tab\tab\tab </tr>\tab\par
+\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td colspan=2><input class="button" style="width:106" type="button" value="0" onclick="insert(0)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" type="button" value="." onclick="insert('.')"></td>\par
+\tab\tab\tab\tab\tab\par
+\par
+\tab\tab\tab\tab </tr>\tab\par
+\par
+\tab\tab\tab\tab\tab\par
+\par
+\tab\tab\tab </table>\par
+\tab\tab </div>\par
+\tab </body>\par
+</html>\par
+\par
+\par
+\par
+\par
+\par
+<html>\par
+\tab <head>\par
+\tab\tab <script>\par
+\tab\tab\tab\tab function insert(num)\{\par
+\tab\tab\tab\tab\tab document.form.textview.value=document.form.textview.value+num;\par
+\tab\tab\tab\tab\}\par
+\par
+\tab\tab\tab\tab function equal()\{\par
+\tab\tab\tab\tab\tab var exp=document.form.textview.value;\par
+\tab\tab\tab\tab\tab if(exp)\{\par
+\tab\tab\tab\tab\tab\tab document.form.textview.value=eval(exp);\par
+\tab\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab\}\par
+\par
+\tab\tab\tab\tab function clean()\{\par
+\tab\tab\tab\tab\tab document.form.textview.value="";\par
+\tab\tab\tab\tab\}\par
+\par
+\tab\tab\tab\tab function back()\{\par
+\tab\tab\tab\tab\tab var exp = document.form.textview.value;\par
+\tab\tab\tab\tab\tab document.form.textview.value= exp.substring(0,exp,length-1);\par
+\tab\tab\tab\tab\}\par
+\tab\tab </script>\par
+\tab\tab <style>\par
+\tab\tab\tab\tab *\{\par
+\tab\tab\tab\tab\tab margin:0;\par
+\tab\tab\tab\tab\tab padding:0;\par
+\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab .button\{\par
+\tab\tab\tab\tab\tab width:50;\par
+\tab\tab\tab\tab\tab height:50;\par
+\tab\tab\tab\tab\tab font-size:25;\par
+\tab\tab\tab\tab\tab margin:2;\par
+\tab\tab\tab\tab\tab cursor:pointer;\par
+\tab\tab\tab\tab\tab background:\tab #F0FFFF;\par
+\tab\tab\tab\tab\tab border:double;\par
+\tab\tab\tab\tab\tab color:#000000;\par
+\tab\tab\tab\tab\}\par
+\tab\tab\tab\tab .textview\{\par
+\tab\tab\tab\tab\tab width:217;\par
+\tab\tab\tab\tab\tab margin:5;\par
+\tab\tab\tab\tab\tab font-size:25;\par
+\tab\tab\tab\tab\tab padding:5; \par
+\tab\tab\tab\tab\tab border:double;\par
+\tab\tab\tab\tab\tab color:black;\par
+\tab\tab\tab\tab\}\par
+\par
+\tab\tab\tab\tab .main\{\par
+\tab\tab\tab\tab\tab position: absolute;\par
+\tab\tab\tab\tab\tab top:50%;\par
+\tab\tab\tab\tab\tab left:50%;\par
+\tab\tab\tab\tab\tab transform:translateX(-50%) translateY(-50%);\par
+\tab\tab\tab\tab\}\par
+\par
+\tab\tab\tab\tab .bg\{\par
+\tab\tab\tab\tab\tab background:\tab #A9A9A9;\par
+\tab\tab\tab\tab\tab height:100%;\par
+\tab\tab\tab\tab\}\par
+\tab\tab </Style>\par
+\tab </head>\par
+\tab <body>\par
+\tab\tab <div class="bg"></div>\par
+\tab\tab <div class="main">\par
+\tab\tab\tab <form name="form">\par
+\tab\tab\tab\tab <input class="textview" name="textview">\par
+\tab\tab\tab </form>\par
+\tab\tab\tab <table>\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="C" onclick="clean()"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="<" onclick="back()"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="/" onclick="insert('/')"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="*" onclick="insert('*')"></td>\par
+\par
+\tab\tab\tab\tab </tr>\tab\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="7" onclick="insert(7)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="8" onclick="insert(8)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="9" onclick="insert(9)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="-" onclick="insert('-')"></td>\par
+\par
+\tab\tab\tab\tab </tr>\tab\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="4" onclick="insert(4)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="5" onclick="insert(5)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="6" onclick="insert(6)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="+" onclick="insert('+')"></td>\par
+\par
+\tab\tab\tab\tab </tr>\tab\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="1" onclick="insert(1)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="2" onclick="insert(2)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" value="3" onclick="insert(3)"></td>\par
+\tab\tab\tab\tab\tab <td rowspan=5><input class="button" style="height:106" value="=" onclick="equal()"></td>\par
+\par
+</tr>\tab\par
+\par
+\tab\tab\tab\tab <tr>\par
+\tab\tab\tab\tab\tab <td colspan=2><input class="button" style="width:106" type="button" value="0" onclick="insert(0)"></td>\par
+\tab\tab\tab\tab\tab <td><input class="button" type="button" value="." onclick="insert('.')"></td>\par
+\tab\tab\tab\tab\tab\par
+\par
+\tab\tab\tab\tab </tr>\tab\par
+\par
+\tab\tab\tab\tab\tab\par
+\par
+\tab\tab\tab </table>\par
+\tab\tab </div>\par
+\tab </body>\par
+</html>\par
+}
+ 
